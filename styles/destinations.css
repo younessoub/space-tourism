@@ -1,0 +1,9 @@
+@import url('./all.css');
+
+body {
+    background: url('../assets/destination/background-destination-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
