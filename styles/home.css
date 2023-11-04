@@ -145,7 +145,7 @@ p {
 
     .header-line {
         display: block;
-        border-top: 1px solid var(--color-two);
+        border-top: 1px solid #414452;
         flex: .8;
         transform-origin: left;
         transform: scaleX(1.2);
