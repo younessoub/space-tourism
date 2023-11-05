@@ -1,0 +1,178 @@
+@import url('./all.css');
+
+
+body {
+    background: url('../assets/crew/background-crew-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-wrap {
+    padding: 20px 5%;
+}
+
+h3 {
+    color: var(--color-three);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+h3 span {
+    color: var(--color-two);
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.img {
+    /* border: 1px solid red; */
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(94, 94, 94);
+
+}
+
+.img img {
+    width: 60%;
+}
+
+.nav-section {
+    padding-top: 30px;
+}
+
+.crew-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crew-nav div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-three);
+    opacity: .4;
+}
+
+.crew-nav div.active {
+    opacity: 1;
+}
+
+.text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.text span {
+    color: var(--color-two);
+    opacity: .5;
+    text-transform: uppercase;
+    font-size: 20px;
+    /* letter-spacing: 2px; */
+    font-family: var(--font-family-primary);
+}
+
+.text h2 {
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: var(--color-three);
+    font-family: var(--font-family-primary);
+    font-weight: 300;
+}
+
+.text p {
+    color: var(--color-two);
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+
+
+@media (min-width:768px) {
+    body {
+        background: url('../assets/crew/background-crew-tablet.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        padding: 0 0 0 35px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+        background-color: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(50px);
+        color: var(--color-three);
+        padding: 0 50px;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .desktop-nav li {
+        padding: 40px 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+
+    .desktop-nav li:nth-child(3) {
+        border-bottom: 3px solid var(--color-three);
+    }
+
+    .desktop-nav span {
+        display: none;
+    }
+
+}
+
+@media (min-width:1024px) {
+    body {
+        background: url('../assets/crew/background-crew-desktop.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    nav {
+        padding: 40px 0 0 60px;
+    }
+
+    .header-line {
+        display: block;
+        border-top: 1px solid #414452;
+        flex: .8;
+        transform-origin: left;
+        transform: scaleX(1.2);
+        z-index: 2;
+    }
+
+    .desktop-nav {
+        padding: 0 150px;
+    }
+
+    .desktop-nav span {
+        display: inline-block;
+        font-weight: bolder;
+        margin-right: 5px;
+    }
+
+
+}
