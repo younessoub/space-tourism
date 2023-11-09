@@ -1,0 +1,28 @@
+@import url('./all.css');
+
+
+body {
+    background: url('../assets/technology/background-technology-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.main-wrap {
+    padding: 20px 5%;
+}
+
+h3 {
+    color: var(--color-three);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+h3 span {
+    color: var(--color-two);
+    font-size: 18px;
+    margin-right: 10px;
+}
